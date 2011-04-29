@@ -1,0 +1,16 @@
+scale
+1.0
+1.0
+1.0
+rotation (x, y, z)
+45.0
+0.0
+0.0
+translation
+0.0
+0.0
+0.0
+material
+1.0
+0.0
+1.0

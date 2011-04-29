@@ -1,0 +1,12 @@
+scale
+0.2
+0.2
+0.1
+rotation (x, y, z)
+00.0
+90.0
+0.0
+translation
+-0.2
+1.2
+0.0

@@ -1,0 +1,1 @@
+In order to use the programs through the Makefile, you need to modify the Makefile with the proper USER, PASSWORD, HOST, DATABASE variables.

@@ -1,0 +1,3 @@
+Setup database environment in Makefile.
+make install installs sql scripts.
+make run runs the application

@@ -1,0 +1,280 @@
+Script started on Thu Oct 23 16:39:12 2008
+bash-3.2$ a.[K[K/[K.a[K/a.out
+Welcome to Plus or Minus Books Financial Simulation!
+Please input at least three categories and no more than 10.
+Input "finish" when done.
+Input category #1: Mystery
+Input category #2: Sci-fi
+Input category #3: finish
+Input category #3: Self-help
+Input category #4: Fiction
+Input category #5: finish
+
+Mystery's books.
+
+Author: Francis
+Title: Shattered
+Retail price: 24.95
+Quantity: 10
+
+Author: Friedman
+Title: Goo d Bless John Wayne
+Retail price: 6.00
+Quantity: 5
+
+
+Sci-fi's books.
+
+Author: Asimov
+Title: I, Robot
+Retail price: 7.99
+Quantity: 250
+
+Author: Pratc   atchett
+Title: Monstrous Regiment
+Retail price: 22.49
+Quantity: 15
+
+
+Self-help's books.
+
+Author: Cleese
+Title: Life and How to Suri vive It
+Retail price: 12.00
+Quantity: 20
+
+Author: Stein
+Title: How To  to Ruin Your Life
+Retail price: 12.95
+Quantity: 2
+
+
+Fiction's books.
+
+Author: William Faulkner
+Title: The Sound and the Fury
+Retail price: -15.00
+Retail price: 15.00
+Quantity: -400
+Quantity: 400
+
+Author: William Faulkner
+Title: As I Lay Dying
+Retail price: 24.50
+Quantity: 10
+
+Category:	Mystery
+	Author:    Francis
+	Book:      "Shattered"
+	Retail:    $24.95
+	Quantity:  10
+
+	Author:    Friedman
+	Book:      "God Bless John Wayne"
+	Retail:    $6.00
+	Quantity:  5
+
+Category:	Sci-fi
+	Author:    Asimov
+	Book:      "I, Robot"
+	Retail:    $7.99
+	Quantity:  250
+
+	Author:    Pratchett
+	Book:      "Monstrous Regiment"
+	Retail:    $22.49
+	Quantity:  15
+
+Category:	Self-help
+	Author:    Cleese
+	Book:      "Life and How to Survive It"
+	Retail:    $12.00
+	Quantity:  20
+
+	Author:    Stein
+	Book:      "How to Ruin Your Life"
+	Retail:    $12.95
+	Quantity:  2
+
+Category:	Fiction
+	Author:    William Faulkner
+	Book:      "The Sound and the Fury"
+	Retail:    $15.00
+	Quantity:  400
+
+	Author:    William Faulkner
+	Book:      "As I Lay Dying"
+	Retail:    $24.50
+	Quantity:  10
+
+
+How many publishers/distributors to compare (max 10): 5
+Name of #1 publisher: Amazon
+Name of #2 publisher: Barbie
+Name of #3 publisher: Campbell
+Name of #4 publisher: Dumble
+Name of #5 publisher: Ebay
+
+Amazon:
+	Shattered:
+		Wholesale price: 9.99
+		Quantity: 90
+	God Bless John Wayne:
+		Wholesale price: 4.00
+		Quantity: 25
+	I, Robot:
+		Wholesale price: 2.00
+		Quantity: 2000
+	Monstrous Regiment:
+		Wholesale price: 16.99
+		Quantity: 12
+	Life and How to Survive It:
+		Wholesale price: 10.00
+		Quantity: 100
+	How to Ruin Your Life:
+		Wholesale price: 5.00
+		Quantity: 250
+	The Sound and the Fury:
+		Wholesale price: 5.75
+		Quantity: 7
+	As I Lay Dying:
+		Wholesale price: 8.90
+		Quantity: 50
+
+Barbie:
+	Shattered:
+		Wholesale price: 19.99
+		Quantity: 100
+	God Bless John Wayne:
+		Wholesale price: 4.50
+		Quantity: 100
+	I, Robot:
+		Wholesale price: 2.50
+		Quantity: 100
+	Monstrous Regiment:
+		Wholesale price: 12.99
+		Quantity: 100
+	Life and How to Survive It:
+		Wholesale price: 7.50
+		Quantity: 100
+	How to Ruin Your Life:
+		Wholesale price: 15.00
+		Quantity: 100
+	The Sound and the Fury:
+		Wholesale price: 3.75
+		Quantity: 100
+	As I Lay Dying:
+		Wholesale price: 10.50
+		Quantity: 100
+
+Campbell:
+	Shattered:
+		Wholesale price: 15.00
+		Quantity: 10
+	God Bless John Wayne:
+		Wholesale price: 6.00
+		Quantity: 0
+	I, Robot:
+		Wholesale price: 6.00
+		Quantity: 10
+	Monstrous Regiment:
+		Wholesale price: 15.00
+		Quantity: 100
+	Life and How to Survive It:
+		Wholesale price: 6.00
+		Quantity: 10
+	How to Ruin Your Life:
+		Wholesale price: 6.00
+		Quantity: 100
+	The Sound and the Fury:
+		Wholesale price: 12.30
+		Quantity: 5
+	As I Lay Dying:
+		Wholesale price: 15.80
+		Quantity: 10
+
+Dumble:
+	Shattered:
+		Wholesale price: 10.00
+		Quantity: 1000
+	God Bless John Wayne:
+		Wholesale price: 3.00
+		Quantity: 5000
+	I, Robot:
+		Wholesale price: 3.00
+		Quantity: 5000
+	Monstrous Regiment:
+		Wholesale price: 10.00
+		Quantity: 1000
+	Life and How to Survive It:
+		Wholesale price: 3.00
+		Quantity: 5000
+	How to Ruin Your Life:
+		Wholesale price: 3.00
+		Quantity: 5000
+	The Sound and the Fury:
+		Wholesale price: -10.00
+		Wholesale price: 10.00
+		Quantity: -15
+		Quantity: 15
+	As I Lay Dying:
+		Wholesale price: 8.88
+		Quantity: 4
+
+Ebay:
+	Shattered:
+		Wholesale price: 3.00
+		Quantity: 2
+	God Bless John Wayne:
+		Wholesale price: 3.40
+		Quantity: 100
+	I, Robot:
+		Wholesale price: 16.00
+		Quantity: 5
+	Monstrous Regiment:
+		Wholesale price: 12.00
+		Quantity: 5
+	Life and How to Survive It:
+		Wholesale price: 4.70
+		Quantity: 5
+	How to Ruin Your Life:
+		Wholesale price: 5.75
+		Quantity: 0
+	The Sound and the Fury:
+		Wholesale price: 7.90
+		Quantity: 5
+	As I Lay Dying:
+		Wholesale price: 2.54
+		Quantity: 20
+Performing calculations!
+Amazon		$3471.75
+	Between 80% and 120% of requested books!
+	Over 100% profit!
+
+Barbie		$2827.25
+	Between 80% and 120% of requested books!
+	Over 100% profit!
+
+Campbell		$7115.00
+	Less than 80% of requested books!
+	Between 25% and 50% profit!
+
+Dumble		$5169.80
+	Between 80% and 120% of requested books!
+	Between 76% and 100% profit!
+
+Ebay		$7515.90
+	Less than 80% of requested books!
+	Less than 25% profit!
+
+
+Publishers with at least 80% of books and yield at least 51% profit:
+Amazon
+Barbie
+Dumble
+
+Thank you for using Plus or Minus Books Financial Simulation!
+bash-3.2$ exit
+exit
+
+Script done on Thu Oct 23 16:45:28 2008

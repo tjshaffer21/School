@@ -1,0 +1,57 @@
+14
+Shattered
+Francis, Dick
+8.00 17.65 10 0399146601
+2004 2002 H 289
+God Bless John Wayne
+Friedman, Kinky
+2.50 6.99 5 0553576330
+1996 1994 P 256
+I, Robot
+Asimov, Isaac
+4.00 18.70 3 0739312707
+2004 2004 D 8.25
+Monstrous Regiment
+Pratchett, Terry
+2.90  7.50 5 0060013168
+2004 2003 P 405
+Life and How to Survive It
+Cleese, John
+8.0 10.40 3 0393314723
+1996 1993 S 424
+How to Ruin Your Life
+Stein, Ben, J
+3.25 8.76 2 1401902391
+2003 2003 C 2
+Slaughterhouse-Five
+Vonnegut, Kurt
+16.49 24.99 10 0385333846
+1999 1969 P 288
+The Children of Hurin
+Tolkien, J.R.R.
+32.97 49.95 4 0007263457
+2007 2007 D 9.2
+Fahrenheit 451
+Bradbury, Ray, D
+15.64 23.00 30 0743247221
+2003 1953 H 208
+1984
+Orwell, George
+23.36 29.95 4 0899663680
+1982 1949 P 314
+The Hobbit
+Tolkien, J.R.R.
+8.00 10.00 40 0618260307
+2002 1937 P 320
+To Kill A Mockingbird
+Lee, Harper
+7.99 7.99 25 0446310786
+1988 1960 P 281
+Brave New World
+Huxley, Aldous
+11.16 13.95 60 0060850523
+2006 1932 P 288
+A Clockwork Orange
+Burgess, Anthony
+11.16 13.95 100 0393312836
+1986 1962 P 192

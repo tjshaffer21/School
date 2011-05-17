@@ -1,0 +1,820 @@
+Script started on Tue 11 Nov 2008 08:30:02 PM CST
+]0;thomas@thomas: ~/programming/csc2300/prog3thomas@thomas:~/programming/csc2300/prog3$ ./a.out
+
+Welcome to the Plus or Minus Book Store Inventory List!
+Reading input...
+Title:			Slaughterhouse-Five
+Author:			Vonnegut, Kurt
+ISBN:			0385333846
+Wholesale Cost:		$16.49
+Retail Cost:		$24.99
+Publication:		1999
+Orig. Publication:	1969
+Media:			P
+Num. Pages:		288
+
+Title:			The Children of Hurin
+Author:			Tolkien, J.R.R.
+ISBN:			0007263457
+Wholesale Cost:		$32.97
+Retail Cost:		$49.95
+Publication:		2007
+Orig. Publication:	2007
+Media:			D
+Num. Pages:		1091777331
+
+Title:			Fahrenheit 451
+Author:			Bradbury, Ray D.
+ISBN:			0743247221
+Wholesale Cost:		$15.64
+Retail Cost:		$23.00
+Publication:		2003
+Orig. Publication:	1953
+Media:			H
+Num. Pages:		208
+
+Title:			1984
+Author:			Orwell, George
+ISBN:			0899663680
+Wholesale Cost:		$23.36
+Retail Cost:		$29.95
+Publication:		1982
+Orig. Publication:	1949
+Media:			P
+Num. Pages:		314
+
+Title:			The Hobbit
+Author:			Tolkien, J.R.R.
+ISBN:			0618260307
+Wholesale Cost:		$8.00
+Retail Cost:		$10.00
+Publication:		2002
+Orig. Publication:	1937
+Media:			P
+Num. Pages:		320
+
+Title:			To Kill A Mockingbird
+Author:			Lee, Harper
+ISBN:			0446310786
+Wholesale Cost:		$7.99
+Retail Cost:		$7.99
+Publication:		1988
+Orig. Publication:	1960
+Media:			P
+Num. Pages:		281
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 1
+
+Printing book titles!
+
+Slaughterhouse-Five
+The Children of Hurin
+Fahrenheit 451
+1984
+The Hobbit
+To Kill A Mockingbird
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 2
+
+Printing authors!
+
+Vonnegut, Kurt
+Tolkien, J.R.R.
+Bradbury, Ray D.
+Orwell, George
+Tolkien, J.R.R.
+Lee, Harper
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 4
+
+Sorting by book titles!
+5 comparisons made!
+
+1984 by George Orwell
+Fahrenheit 451 by Ray Bradbury
+Slaughterhouse-Five by Kurt Vonnegut
+The Children of Hurin by J.R.R. Tolkien
+The Hobbit by J.R.R. Tolkien
+To Kill A Mockingbird by Harper Lee
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 3
+
+Sorting by ISBN!
+
+0007263457		The Children of Hurin
+0385333846		Slaughterhouse-Five
+0446310786		To Kill A Mockingbird
+0618260307		The Hobbit
+0743247221		Fahrenheit 451
+0899663680		1984
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 4
+
+Sorting by book titles!
+11 comparisons made!
+
+1984 by George Orwell
+Fahrenheit 451 by Ray Bradbury
+Slaughterhouse-Five by Kurt Vonnegut
+The Children of Hurin by J.R.R. Tolkien
+The Hobbit by J.R.R. Tolkien
+To Kill A Mockingbird by Harper Lee
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 2
+
+Printing authors!
+
+Orwell, George
+Bradbury, Ray D.
+Vonnegut, Kurt
+Tolkien, J.R.R.
+Tolkien, J.R.R.
+Lee, Harper
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 1
+
+Printing book titles!
+
+1984
+Fahrenheit 451
+Slaughterhouse-Five
+The Children of Hurin
+The Hobbit
+To Kill A Mockingbird
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 5
+
+Thank you for using Plus or Minus Book Store!
+
+]0;thomas@thomas: ~/programming/csc2300/prog3thomas@thomas:~/programming/csc2300/prog3$ cat input2.txt > bookfile.txt
+]0;thomas@thomas: ~/programming/csc2300/prog3thomas@thomas:~/programming/csc2300/prog3$ .a[K/a.out
+
+Welcome to the Plus or Minus Book Store Inventory List!
+Reading input...
+Title:			Shattered
+Author:			Francis, Dick
+ISBN:			1587880636
+Wholesale Cost:		$13.00
+Retail Cost:		$24.95
+Publication:		2004
+Orig. Publication:	2002
+Media:			C
+Num. Pages:		4
+
+Title:			Shattered
+Author:			Francis, Dick
+ISBN:			0399146601
+Wholesale Cost:		$8.00
+Retail Cost:		$17.65
+Publication:		2004
+Orig. Publication:	2002
+Media:			H
+Num. Pages:		289
+
+Title:			God Bless John Wayne
+Author:			Friedman, Kinky
+ISBN:			0553576330
+Wholesale Cost:		$2.50
+Retail Cost:		$6.99
+Publication:		1996
+Orig. Publication:	1994
+Media:			P
+Num. Pages:		256
+
+Title:			I, Robot
+Author:			Asimov, Isaac
+ISBN:			0785773380
+Wholesale Cost:		$4.00
+Retail Cost:		$11.13
+Publication:		1999
+Orig. Publication:	1950
+Media:			S
+Num. Pages:		275
+
+Title:			I, Robot
+Author:			Asimov, Isaac
+ISBN:			0739312707
+Wholesale Cost:		$4.00
+Retail Cost:		$18.70
+Publication:		2004
+Orig. Publication:	2004
+Media:			D
+Num. Pages:		1090781184
+
+Title:			Monstrous Regiment
+Author:			Pratchett, Terry
+ISBN:			0060013168
+Wholesale Cost:		$2.90
+Retail Cost:		$7.50
+Publication:		2004
+Orig. Publication:	2003
+Media:			P
+Num. Pages:		405
+
+Title:			Life and How to Survive It
+Author:			Cleese, John
+ISBN:			0393314723
+Wholesale Cost:		$8.00
+Retail Cost:		$10.40
+Publication:		1996
+Orig. Publication:	1993
+Media:			S
+Num. Pages:		424
+
+Title:			How to Ruin Your Life
+Author:			Stein, Ben J.
+ISBN:			1561709743
+Wholesale Cost:		$5.00
+Retail Cost:		$10.36
+Publication:		2002
+Orig. Publication:	2001
+Media:			H
+Num. Pages:		128
+
+Title:			How to Ruin Your Life
+Author:			Stein, Ben J.
+ISBN:			1401902391
+Wholesale Cost:		$3.25
+Retail Cost:		$8.76
+Publication:		2003
+Orig. Publication:	2003
+Media:			C
+Num. Pages:		2
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 1
+
+Printing book titles!
+
+Shattered
+Shattered
+God Bless John Wayne
+I, Robot
+I, Robot
+Monstrous Regiment
+Life and How to Survive It
+How to Ruin Your Life
+How to Ruin Your Life
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 2
+
+Printing authors!
+
+Francis, Dick
+Francis, Dick
+Friedman, Kinky
+Asimov, Isaac
+Asimov, Isaac
+Pratchett, Terry
+Cleese, John
+Stein, Ben J.
+Stein, Ben J.
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 4
+
+Sorting by book titles!
+23 comparisons made!
+
+God Bless John Wayne by Kinky Friedman
+How to Ruin Your Life by Ben Stein
+How to Ruin Your Life by Ben Stein
+I, Robot by Isaac Asimov
+I, Robot by Isaac Asimov
+Life and How to Survive It by John Cleese
+Monstrous Regiment by Terry Pratchett
+Shattered by Dick Francis
+Shattered by Dick Francis
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 3
+
+Sorting by ISBN!
+
+0060013168		Monstrous Regiment
+0393314723		Life and How to Survive It
+0399146601		Shattered
+0553576330		God Bless John Wayne
+0739312707		I, Robot
+0785773380		I, Robot
+1401902391		How to Ruin Your Life
+1561709743		How to Ruin Your Life
+1587880636		Shattered
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 4
+
+Sorting by book titles!
+20 comparisons made!
+
+God Bless John Wayne by Kinky Friedman
+How to Ruin Your Life by Ben Stein
+How to Ruin Your Life by Ben Stein
+I, Robot by Isaac Asimov
+I, Robot by Isaac Asimov
+Life and How to Survive It by John Cleese
+Monstrous Regiment by Terry Pratchett
+Shattered by Dick Francis
+Shattered by Dick Francis
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 3
+
+Sorting by ISBN!
+
+0060013168		Monstrous Regiment
+0393314723		Life and How to Survive It
+0399146601		Shattered
+0553576330		God Bless John Wayne
+0739312707		I, Robot
+0785773380		I, Robot
+1401902391		How to Ruin Your Life
+1561709743		How to Ruin Your Life
+1587880636		Shattered
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 4
+
+Sorting by book titles!
+20 comparisons made!
+
+God Bless John Wayne by Kinky Friedman
+How to Ruin Your Life by Ben Stein
+How to Ruin Your Life by Ben Stein
+I, Robot by Isaac Asimov
+I, Robot by Isaac Asimov
+Life and How to Survive It by John Cleese
+Monstrous Regiment by Terry Pratchett
+Shattered by Dick Francis
+Shattered by Dick Francis
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 2
+
+Printing authors!
+
+Friedman, Kinky
+Stein, Ben J.
+Stein, Ben J.
+Asimov, Isaac
+Asimov, Isaac
+Cleese, John
+Pratchett, Terry
+Francis, Dick
+Francis, Dick
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 1
+
+Printing book titles!
+
+God Bless John Wayne
+How to Ruin Your Life
+How to Ruin Your Life
+I, Robot
+I, Robot
+Life and How to Survive It
+Monstrous Regiment
+Shattered
+Shattered
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 5
+
+Thank you for using Plus or Minus Book Store!
+
+]0;thomas@thomas: ~/programming/csc2300/prog3thomas@thomas:~/programming/csc2300/prog3$ cat input3.txt > bookfile.txt
+]0;thomas@thomas: ~/programming/csc2300/prog3thomas@thomas:~/programming/csc2300/prog3$ ./a.out
+
+Welcome to the Plus or Minus Book Store Inventory List!
+Reading input...
+Title:			Shattered
+Author:			Francis, Dick
+ISBN:			0399146601
+Wholesale Cost:		$8.00
+Retail Cost:		$17.65
+Publication:		2004
+Orig. Publication:	2002
+Media:			H
+Num. Pages:		289
+
+Title:			God Bless John Wayne
+Author:			Friedman, Kinky
+ISBN:			0553576330
+Wholesale Cost:		$2.50
+Retail Cost:		$6.99
+Publication:		1996
+Orig. Publication:	1994
+Media:			P
+Num. Pages:		256
+
+Title:			I, Robot
+Author:			Asimov, Isaac
+ISBN:			0739312707
+Wholesale Cost:		$4.00
+Retail Cost:		$18.70
+Publication:		2004
+Orig. Publication:	2004
+Media:			D
+Num. Pages:		1090781184
+
+Title:			Monstrous Regiment
+Author:			Pratchett, Terry
+ISBN:			0060013168
+Wholesale Cost:		$2.90
+Retail Cost:		$7.50
+Publication:		2004
+Orig. Publication:	2003
+Media:			P
+Num. Pages:		405
+
+Title:			Life and How to Survive It
+Author:			Cleese, John
+ISBN:			0393314723
+Wholesale Cost:		$8.00
+Retail Cost:		$10.40
+Publication:		1996
+Orig. Publication:	1993
+Media:			S
+Num. Pages:		424
+
+Title:			How to Ruin Your Life
+Author:			Stein, Ben J.
+ISBN:			1401902391
+Wholesale Cost:		$3.25
+Retail Cost:		$8.76
+Publication:		2003
+Orig. Publication:	2003
+Media:			C
+Num. Pages:		2
+
+Title:			Slaughterhouse-Five
+Author:			Vonnegut, Kurt
+ISBN:			0385333846
+Wholesale Cost:		$16.49
+Retail Cost:		$24.99
+Publication:		1999
+Orig. Publication:	1969
+Media:			P
+Num. Pages:		288
+
+Title:			The Children of Hurin
+Author:			Tolkien, J.R.R.
+ISBN:			0007263457
+Wholesale Cost:		$32.97
+Retail Cost:		$49.95
+Publication:		2007
+Orig. Publication:	2007
+Media:			D
+Num. Pages:		1091777331
+
+Title:			Fahrenheit 451
+Author:			Bradbury, Ray D.
+ISBN:			0743247221
+Wholesale Cost:		$15.64
+Retail Cost:		$23.00
+Publication:		2003
+Orig. Publication:	1953
+Media:			H
+Num. Pages:		208
+
+Title:			1984
+Author:			Orwell, George
+ISBN:			0899663680
+Wholesale Cost:		$23.36
+Retail Cost:		$29.95
+Publication:		1982
+Orig. Publication:	1949
+Media:			P
+Num. Pages:		314
+
+Title:			The Hobbit
+Author:			Tolkien, J.R.R.
+ISBN:			0618260307
+Wholesale Cost:		$8.00
+Retail Cost:		$10.00
+Publication:		2002
+Orig. Publication:	1937
+Media:			P
+Num. Pages:		320
+
+Title:			To Kill A Mockingbird
+Author:			Lee, Harper
+ISBN:			0446310786
+Wholesale Cost:		$7.99
+Retail Cost:		$7.99
+Publication:		1988
+Orig. Publication:	1960
+Media:			P
+Num. Pages:		281
+
+Title:			Brave New World
+Author:			Huxley, Aldous
+ISBN:			0060850523
+Wholesale Cost:		$11.16
+Retail Cost:		$13.95
+Publication:		2006
+Orig. Publication:	1932
+Media:			P
+Num. Pages:		288
+
+Title:			A Clockwork Orange
+Author:			Burgess, Anthony
+ISBN:			0393312836
+Wholesale Cost:		$11.16
+Retail Cost:		$13.95
+Publication:		1986
+Orig. Publication:	1962
+Media:			P
+Num. Pages:		192
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 1
+
+Printing book titles!
+
+Shattered
+God Bless John Wayne
+I, Robot
+Monstrous Regiment
+Life and How to Survive It
+How to Ruin Your Life
+Slaughterhouse-Five
+The Children of Hurin
+Fahrenheit 451
+1984
+The Hobbit
+To Kill A Mockingbird
+Brave New World
+A Clockwork Orange
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 2
+
+Printing authors!
+
+Francis, Dick
+Friedman, Kinky
+Asimov, Isaac
+Pratchett, Terry
+Cleese, John
+Stein, Ben J.
+Vonnegut, Kurt
+Tolkien, J.R.R.
+Bradbury, Ray D.
+Orwell, George
+Tolkien, J.R.R.
+Lee, Harper
+Huxley, Aldous
+Burgess, Anthony
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 4
+
+Sorting by book titles!
+49 comparisons made!
+
+1984 by George Orwell
+A Clockwork Orange by Anthony Burgess
+Brave New World by Aldous Huxley
+Fahrenheit 451 by Ray Bradbury
+God Bless John Wayne by Kinky Friedman
+How to Ruin Your Life by Ben Stein
+I, Robot by Isaac Asimov
+Life and How to Survive It by John Cleese
+Monstrous Regiment by Terry Pratchett
+Shattered by Dick Francis
+Slaughterhouse-Five by Kurt Vonnegut
+The Children of Hurin by J.R.R. Tolkien
+The Hobbit by J.R.R. Tolkien
+To Kill A Mockingbird by Harper Lee
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 3
+
+Sorting by ISBN!
+
+0007263457		The Children of Hurin
+0060013168		Monstrous Regiment
+0060850523		Brave New World
+0385333846		Slaughterhouse-Five
+0393312836		A Clockwork Orange
+0393314723		Life and How to Survive It
+0399146601		Shattered
+0446310786		To Kill A Mockingbird
+0553576330		God Bless John Wayne
+0618260307		The Hobbit
+0739312707		I, Robot
+0743247221		Fahrenheit 451
+0899663680		1984
+1401902391		How to Ruin Your Life
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 4
+
+Sorting by book titles!
+56 comparisons made!
+
+1984 by George Orwell
+A Clockwork Orange by Anthony Burgess
+Brave New World by Aldous Huxley
+Fahrenheit 451 by Ray Bradbury
+God Bless John Wayne by Kinky Friedman
+How to Ruin Your Life by Ben Stein
+I, Robot by Isaac Asimov
+Life and How to Survive It by John Cleese
+Monstrous Regiment by Terry Pratchett
+Shattered by Dick Francis
+Slaughterhouse-Five by Kurt Vonnegut
+The Children of Hurin by J.R.R. Tolkien
+The Hobbit by J.R.R. Tolkien
+To Kill A Mockingbird by Harper Lee
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 2
+
+Printing authors!
+
+Orwell, George
+Burgess, Anthony
+Huxley, Aldous
+Bradbury, Ray D.
+Friedman, Kinky
+Stein, Ben J.
+Asimov, Isaac
+Cleese, John
+Pratchett, Terry
+Francis, Dick
+Vonnegut, Kurt
+Tolkien, J.R.R.
+Tolkien, J.R.R.
+Lee, Harper
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 1
+
+Printing book titles!
+
+1984
+A Clockwork Orange
+Brave New World
+Fahrenheit 451
+God Bless John Wayne
+How to Ruin Your Life
+I, Robot
+Life and How to Survive It
+Monstrous Regiment
+Shattered
+Slaughterhouse-Five
+The Children of Hurin
+The Hobbit
+To Kill A Mockingbird
+
+Please pick a display option.
+1) Book titles in current order.
+2) Authors in current order.
+3) Sort by ISBN number.
+4) Sort by book title.
+5) Quit
+Choice: 5
+
+Thank you for using Plus or Minus Book Store!
+
+]0;thomas@thomas: ~/programming/csc2300/prog3thomas@thomas:~/programming/csc2300/prog3$ exit
+exit
+
+Script done on Tue 11 Nov 2008 08:31:32 PM CST

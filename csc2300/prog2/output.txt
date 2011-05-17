@@ -1,0 +1,195 @@
+Script started on Thu Oct 23 16:34:36 2008
+bash-3.2$ ./a.out
+Welcome to Plus or Minus Books Financial Simulation!
+Please input at least three categories and no more than 10.
+Input "finish" when done.
+Input category #1: Mystery
+Input category #2: Sci-fi
+Input category #3: Self-help
+Input category #4: finish
+
+Mystery's books.
+
+Author: Francis
+Title: Shattered
+Retail price: 24.95
+Quantity: 10
+
+Author: Friedman
+Title: God Bless John Wayne
+Retail price: 6.00
+Quantity: 5
+
+
+Sci-fi's books.
+
+Author: Asimov
+Title: I, Robot
+Retail price: 7.99
+Quantity: 250
+
+Author: Pratchett
+Title: Monstrous Regiment
+Retail price: 22.49
+Quantity: 15
+
+
+Self-help's books.
+
+Author: Cleese
+Title: Life and How to Survive It
+Retail price: 12.00
+Quantity: 20
+
+Author: Stein
+Title: How to Ruin Your Life
+Retail price: 12.95
+Quantity: 2
+
+Category:	Mystery
+	Author:    Francis
+	Book:      "Shattered"
+	Retail:    $24.95
+	Quantity:  10
+
+	Author:    Friedman
+	Book:      "God Bless John Wayne"
+	Retail:    $6.00
+	Quantity:  5
+
+Category:	Sci-fi
+	Author:    Asimov
+	Book:      "I, Robot"
+	Retail:    $7.99
+	Quantity:  250
+
+	Author:    Pratchett
+	Book:      "Monstrous Regiment"
+	Retail:    $22.49
+	Quantity:  15
+
+Category:	Self-help
+	Author:    Cleese
+	Book:      "Life and How to Survive It"
+	Retail:    $12.00
+	Quantity:  20
+
+	Author:    Stein
+	Book:      "How to Ruin Your Life"
+	Retail:    $12.95
+	Quantity:  2
+
+
+How many publishers/distributors to compare (max 10): 4
+Name of #1 publisher: Amazon
+Name of #2 publisher: Barbie
+Name of #3 publisher: Campbell
+Name of #4 publisher: Dumble
+
+Amazon:
+	Shattered:
+		Wholesale price: 9.99
+		Quantity: 90
+	God Bless John Wayne:
+		Wholesale price: 4.00
+		Quantity: 25
+	I, Robot:
+		Wholesale price: 2.00
+		Quantity: 2000
+	Monstrous Regiment:
+		Wholesale price: 16.99
+		Quantity: 12
+	Life and How to Survive It:
+		Wholesale price: 10.00
+		Quantity: 100
+	How to Ruin Your Life:
+		Wholesale price: 5.00
+		Quantity: 250
+
+Barbie:
+	Shattered:
+		Wholesale price: 19.99
+		Quantity: 100
+	God Bless John Wayne:
+		Wholesale price: 4.50
+		Quantity: 100
+	I, Robot:
+		Wholesale price: 2.50
+		Quantity: 100
+	Monstrous Regiment:
+		Wholesale price: 12.99
+		Quantity: 100
+	Life and How to Survive It:
+		Wholesale price: 7.50
+		Quantity: 100
+	How to Ruin Your Life:
+		Wholesale price: 15.00
+		Quantity: 100
+
+Campbell:
+	Shattered:
+		Wholesale price: 15.00
+		Quantity: 10
+	God Bless John Wayne:
+		Wholesale price: 6.00
+		Quantity: 0
+	I, Robot:
+		Wholesale price: 6.00
+		Quantity: 10
+	Monstrous Regiment:
+		Wholesale price: 15.00
+		Quantity: 100
+	Life and How to Survive It:
+		Wholesale price: 6.00
+		Quantity: 10
+	How to Ruin Your Life:
+		Wholesale price: 6.00
+		Quantity: 100
+
+Dumble:
+	Shattered:
+		Wholesale price: 10.00
+		Quantity: 10000 
+	God Bless John Wayne:
+		Wholesale price: 3.00
+		Quantity: 5000
+	I, Robot:
+		Wholesale price: 3.00
+		Quantity: 5000
+	Monstrous Regiment:
+		Wholesale price: 10.00
+		Quantity: 5 1000
+	Life and How to Survive It:
+		Wholesale price: 3.00
+		Quantity: 5000
+	How to Ruin Your Life:
+		Wholesale price: 3.00
+		Quantity: 5000
+Performing calculations!
+Amazon		$1084.75
+	Over 120% of requested books!
+	Over 100% profit!
+
+Barbie		$1222.25
+	Over 120% of requested books!
+	Over 100% profit!
+
+Campbell		$2037.00
+	Less than 80% of requested books!
+	Between 25% and 50% profit!
+
+Dumble		$1081.00
+	Over 120% of requested books!
+	Over 100% profit!
+
+
+Publishers with at least 80% of books and yield at least 51% profit:
+Amazon
+Barbie
+Dumble
+
+Thank you for using Plus or Minus Books Financial Simulation!
+bash-3.2$ ./a.out[K[K[K[K[K[K[Kexit
+exit
+
+Script done on Thu Oct 23 16:39:02 2008

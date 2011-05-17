@@ -1,0 +1,126 @@
+Script started on Wed Dec  3 16:11:55 2008
+bash-3.2$ make
+/usr/bin/gcc -O2 -Wall -o tsh tsh.c
+/usr/bin/gcc -O2 -Wall -o myspin myspin.c
+bash-3.2$ make tests
+./sdriver.pl -t trace01.txt -s ./tsh -a "-p"
+#
+# trace01.txt - Properly terminate on EOF.
+#
+./sdriver.pl -t trace02.txt -s ./tsh -a "-p"
+#
+# trace02.txt - Process builtin quit command.
+#
+./sdriver.pl -t trace03.txt -s ./tsh -a "-p"
+#
+# trace03.txt - Run a foreground job.
+#
+tsh> quit
+./sdriver.pl -t trace04.txt -s ./tsh -a "-p"
+#
+# trace04.txt - Run a background job.
+#
+tsh> ./myspin 1 \&
+[1] (966) ./myspin 1 &
+./sdriver.pl -t trace05.txt -s ./tsh -a "-p"
+#
+# trace05.txt - Process jobs builtin command.
+#
+tsh> ./myspin 2 \&
+[1] (970) ./myspin 2 &
+tsh> ./myspin 3 \&
+[2] (972) ./myspin 3 &
+tsh> jobs
+[1] (970) Running ./myspin 2 &
+[2] (972) Running ./myspin 3 &
+./sdriver.pl -t trace06.txt -s ./tsh -a "-p"
+#
+# trace06.txt - Forward SIGINT to foreground job.
+#
+tsh> ./myspin 4
+Job [1] (977) terminated by signal 2
+./sdriver.pl -t trace07.txt -s ./tsh -a "-p"
+#
+# trace07.txt - Forward SIGINT only to foreground job.
+#
+tsh> ./myspin 4 \&
+[1] (981) ./myspin 4 &
+tsh> ./myspin 6
+Job [2] (983) terminated by signal 2
+tsh> jobs
+[1] (981) Running ./myspin 4 &
+./sdriver.pl -t trace08.txt -s ./tsh -a "-p"
+#
+# trace08.txt - Forward SIGTSTP only to foreground job.
+#
+tsh> ./myspin 4 \&
+[1] (988) ./myspin 4 &
+tsh> ./myspin 5
+Job [2] (990) stopped by signal 18
+tsh> jobs
+[1] (988) Running ./myspin 4 &
+[2] (990) Stopped ./myspin 5 
+./sdriver.pl -t trace09.txt -s ./tsh -a "-p"
+#
+# trace09.txt - Process bg builtin command
+#
+tsh> ./myspin 4 \&
+[1] (995) ./myspin 4 &
+tsh> ./myspin 5
+Job [2] (997) stopped by signal 18
+tsh> jobs
+[1] (995) Running ./myspin 4 &
+[2] (997) Stopped ./myspin 5 
+tsh> bg %2
+[2] (997) ./myspin 5 
+tsh> jobs
+[1] (995) Running ./myspin 4 &
+[2] (997) Running ./myspin 5 
+./sdriver.pl -t trace10.txt -s ./tsh -a "-p"
+#
+# trace10.txt - Process fg builtin command. 
+#
+tsh> ./myspin 4 \&
+[1] (1007) ./myspin 4 &
+tsh> fg %1
+Job [1] (1007) stopped by signal 18
+tsh> jobs
+[1] (1007) Stopped ./myspin 4 &
+tsh> fg %1
+tsh> jobs
+./sdriver.pl -t trace11.txt -s ./tsh -a "-p"
+#
+# trace11.txt - Simple error handling
+#
+tsh> ./bogus
+./bogus: Command not found.
+tsh> ./myspin 4 \&
+[1] (1018) ./myspin 4 &
+tsh> fg
+ fg Command requires a PID or a %jobid argument
+tsh> bg
+ bg Command requires a PID or a %jobid argument
+tsh> fg a
+fg Argument requires a PID or a %jobid argument
+tsh> bg a
+bg Argument requires a PID or a %jobid argument
+tsh> fg 9999999
+(9999999) No such process
+tsh> bg 9999999
+(9999999) No such process
+tsh> fg %2
+(%2) No such job
+tsh> fg %1
+Job [1] (1018) stopped by signal 18
+tsh> bg %2
+(%2) No such job
+tsh> bg %1
+[1] (1018) ./myspin 4 &
+tsh> jobs
+[1] (1018) Running ./myspin 4 &
+bash-3.2$ make clean
+rm -f tsh *.o
+bash-3.2$ exit
+exit
+
+Script done on Wed Dec  3 16:12:50 2008

@@ -1,0 +1,1 @@
+The program works fine with Windows; however, currently the file names for textures are not being properly stored when using Linux. So, if it is ran in Linux then the textures do not render.

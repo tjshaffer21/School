@@ -1,0 +1,30 @@
+varying vec3 ecp;
+varying mat3 tbn_m;
+
+uniform sampler2D image;
+uniform sampler2D bump;
+
+void main()
+{
+    vec3 eyeCoordPosition = ecp;
+
+    // Light calculations.
+    vec3 lightPosition = gl_LightSource[0].position.xyz;
+    vec3 lightVector = normalize(lightPosition - eyeCoordPosition);
+
+    // Normal map.
+    vec3 normal = vec3(texture2D(bump, gl_TexCoord[0]).rgb);
+    normal = (normal - 0.5f)*2.0;    // Expand the normal.
+    normal.x = normal.x/255.0;
+    normal.y = normal.y/255.0;
+    normal.z = normal.z/255.0;
+    normal = normalize(normal);      // Normalize
+    normal = tbn_m*normal;           // tbn*normal
+
+    float ldotn = max(dot( lightVector,normal ),0.0);    // l.n
+
+    // Get texture color.
+    vec4 tex_color = vec4(texture2D(image, gl_TexCoord[0]).rgb, 1.0);
+
+    gl_FragColor = tex_color*ldotn;
+}

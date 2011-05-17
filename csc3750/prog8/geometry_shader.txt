@@ -1,0 +1,96 @@
+#version 120
+#extension GL_EXT_geometry_shader4 : enable
+
+varying in vec3 eyeCoordPosition[3];
+varying in vec3 vertex[3];
+varying out vec3 ecp;
+varying out mat3 tbn_m;
+
+
+void main()
+{
+    // Texture coordinates
+    vec4 v1st = gl_TexCoordIn[0][0];
+    vec4 v2st = gl_TexCoordIn[1][0];
+    vec4 v3st = gl_TexCoordIn[2][0];
+
+    vec4 v1nst = gl_TexCoordIn[0][1];
+    vec4 v2nst = gl_TexCoordIn[1][1];
+    vec4 v3nst = gl_TexCoordIn[2][1];
+
+    // Vertex coordinates
+    vec4 v1 = gl_PositionIn[0];
+    vec4 v2 = gl_PositionIn[1];
+    vec4 v3 = gl_PositionIn[2];
+
+    // Coordinate correction
+    // If a vertex of a triangle is in quardrant 4,
+    // check if there exists a vertex in quadrant 1.
+    // If so then increment s by 1.
+    if ( v1st.s < 0.25 ) {
+        if ( v2st.s > 0.75 || v3st.s > 0.75 ) {
+            v1st.s = v1st.s + 1.0;
+        }
+    }
+
+    if ( v2st.s < 0.25 ) {
+        if ( v1st.s > 0.75 || v3st.s > 0.75 ) {
+            v2st.s = v2st.s + 1.0;
+        }
+    }
+
+    if ( v3st.s < 0.25 ) {
+        if ( v1st.s > 0.75 || v2st.s > 0.75 ) {
+            v3st.s = v3st.s + 1.0;
+        }
+    }
+
+    // Do calculations once.
+    vec4 c2c1 = v2st-v1st;                            // st for edge 1
+    vec4 c3c1 = v3st-v1st;                            // st for edge 2
+    vec4 v2v1 = v2-v1;                                // edge 1
+    vec4 v3v1 = v3-v1;                                // edge 2
+    float mul = (c2c1.s*c3c1.t) - (c3c1.s*c2c1.t);    // single division
+
+    // if 0, use identity matrix.
+    if ( mul == 0.0000 ) {
+        tbn_m = mat3( 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0 );
+    } else {
+        float denom = 1.0/mul;
+
+        vec3 t = ((v2v1.xyz*c3c1.t)-(v3v1.xyz*c2c1.t))*denom;
+        vec3 b = ((v3v1.xyz*c2c1.s)-(v2v1.xyz*c3c1.s))*denom;
+
+        t = normalize(t);
+        b = normalize(b);
+        vec3 n = cross(b,t);
+
+        tbn_m = mat3(t,b,n);
+    }
+
+    // First vertex.
+    gl_Position = v1;
+    gl_FrontColor = gl_FrontColorIn[0];
+    gl_TexCoord[0] = v1st;
+    gl_TexCoord[1] = v1nst;
+    ecp = eyeCoordPosition[0];
+    EmitVertex();
+
+    // Second vertex
+    gl_Position = v2;
+    gl_FrontColor = gl_FrontColorIn[1];
+    gl_TexCoord[0] = v2st;
+    gl_TexCoord[1] = v2nst;
+    ecp = eyeCoordPosition[1];
+    EmitVertex();
+
+    // Third vertex
+    gl_Position = v3;
+    gl_FrontColor = gl_FrontColorIn[2];
+    gl_TexCoord[0] = v3st;
+    gl_TexCoord[1] = v3nst;
+    ecp = eyeCoordPosition[2];
+    EmitVertex();
+
+    EndPrimitive();
+}

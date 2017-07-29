@@ -48,7 +48,7 @@ void Window::show()
 
 Window::~Window(){}
 
-Window::Window(int argc, char** argv, int width, int height, int xLoc, int yLoc, char* title)
+Window::Window(int argc, char** argv, int width, int height, int xLoc, int yLoc, const char* title)
 {
    glutInit(&argc, argv);
    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);  //use rgb color and double buffering 

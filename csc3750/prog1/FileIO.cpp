@@ -1,6 +1,6 @@
 #include "FileIO.h"
 
-FileIO::FileIO(char* fle, int op)  //op = 1 for read and 2 for write
+FileIO::FileIO(const char* fle, int op)  //op = 1 for read and 2 for write
 {
    operation = op;
 
@@ -17,7 +17,7 @@ FileIO::FileIO(char* fle, int op)  //op = 1 for read and 2 for write
    MAX = 80;
 }
 
-FileIO::FileIO(char* fle, char delim)  //assumed to be a read
+FileIO::FileIO(const char* fle, char delim)  //assumed to be a read
 {
    infile = new ifstream(fle);
    delimiter = delim;

@@ -13,7 +13,7 @@ class Picture
 {
    public:
       static void render(Pixel* pixel);
-      static BasicObject* readObject(char* fileName);
+      static BasicObject* readObject(const char* fileName);
       //static InstanceObject* buildInstanceObject(char* fileName, BasicObject* obj);
 
    private:

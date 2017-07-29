@@ -16,7 +16,7 @@ void Picture::render(Pixel* pix)
         obj->render( wa, pix );
 }
 
-BasicObject* Picture::readObject(char* fileName)
+BasicObject* Picture::readObject(const char* fileName)
 {
    BasicObject* obj = new BasicObject();
    FileIO* file = new FileIO(fileName, ' '); //assumed to be a read if a delimiter is specified

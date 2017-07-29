@@ -19,8 +19,8 @@ class FileIO
       int MAX;
 
    public:
-      FileIO(char* file, int op);
-      FileIO(char* file, char delim);
+      FileIO(const char* file, int op);
+      FileIO(const char* file, char delim);
       ~FileIO();
       ListIterator<string>* getTokens();
       bool eof();
